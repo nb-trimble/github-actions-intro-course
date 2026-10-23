@@ -1,6 +1,9 @@
 name: hello-world
 
 on: push
+      paths:
+        -  'src/**'
+        -  '!src/generated/**'
 
 jobs:
   hello-world-job:
