@@ -1,9 +1,11 @@
 name: hello-world
 
-on: push:
-      paths:
-        -  'src/**'
-        -  '!src/generated/**'
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - '!src/generated/**'
 
 jobs:
   hello-world-job:
